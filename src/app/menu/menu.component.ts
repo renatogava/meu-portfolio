@@ -11,7 +11,7 @@ export class MenuComponent {
 
   menuStatus: string = 'closed';
 
-  menuItems!:Array<Menu>;
+  menuItems!: Array<Menu>;
 
   menuClick(): void {
     this.menuStatus = (this.menuStatus == 'open') ? 'closed' : 'open';
@@ -21,7 +21,4 @@ export class MenuComponent {
     this.menuItems = new MenuService().getMenu();
 
   }
-  ngOnInit() {
-  }
-
 }
